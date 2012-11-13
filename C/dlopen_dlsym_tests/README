@@ -2,6 +2,8 @@ Proves how to call a function of the libc library inside a function defined in y
 
 For example, we're defining a library with the time() function that it's also in libc. We want to call the libc time() function inside our time() function.
 
+For the dlsym() function, we use the flag RTDL_NEXT, that (from the man page)  will find the next occurrence of  a  function  in  the  search order after the current library.  This allows one to provide a wrapper around a  function  in  another  shared library.
+
 === COMPILE ===
 To compile the code you can check the compile.sh script.
 
