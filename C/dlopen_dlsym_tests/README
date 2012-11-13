@@ -1,0 +1,15 @@
+Proves how to call a function of the libc library inside a function defined in your custom library with the same name.
+
+For example, we're defining a library with the time() function that it's also in libc. We want to call the libc time() function inside our time() function.
+
+=== COMPILE ===
+To compile the code you can check the compile.sh script.
+
+
+=== USAGE ===
+Usage: 
+
+$ ./testTime #(use only the libc version of time())
+
+$ LD_PRELOAD=./libtimelab.so ./testTime #(use the custom version of time() that calls the libc version of time() inside)
+
