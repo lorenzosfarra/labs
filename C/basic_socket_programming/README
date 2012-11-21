@@ -1,0 +1,6 @@
+A very simple panoramic of the socket programming.
+
+The client is (with a lot of fantasy) client.c
+
+There are 2 versions of the server, with and without fork()s.
+
