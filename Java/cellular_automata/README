@@ -1,0 +1,11 @@
+DESCRIPTION
+
+this is a cellular automata framework, supporting concurrent threads to calculate the next status.
+IT'S NOT A PERFECT SOLUTION!
+Simple things to improve:
+ 1) Use pipelines for communication between threads;
+ 2) The algorithm to calculate which cells have to parse a single thread is not completely fair.
+
+LICENSE
+
+GPL3, see the LICENSE file.
